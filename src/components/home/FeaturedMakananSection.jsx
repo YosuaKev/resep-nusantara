@@ -1,6 +1,7 @@
 // src/components/home/FeaturedMakananSection.jsx
 import { Clock, Star, ChefHat } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
+import PropTypes from 'prop-types';
 
 export default function FeaturedMakananSection({ featuredMakanan }) {
   const [visibleMakanan, setVisibleMakanan] = useState(new Set());
@@ -54,7 +55,7 @@ export default function FeaturedMakananSection({ featuredMakanan }) {
               
               <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
-              {/* Recipe Image*/}
+              {/* Recipe Image */}
               <div className="relative h-32 md:h-56 overflow-hidden">
                 <img 
                   src={recipe.image_url}
@@ -97,3 +98,15 @@ export default function FeaturedMakananSection({ featuredMakanan }) {
     </section>
   );
 }
+
+FeaturedMakananSection.propTypes = {
+  featuredMakanan: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+      name: PropTypes.string.isRequired,
+      image_url: PropTypes.string.isRequired,
+      ingredients: PropTypes.array.isRequired,
+      steps: PropTypes.array.isRequired,
+    })
+  ).isRequired,
+};
