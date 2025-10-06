@@ -5,7 +5,7 @@ export default function ProfilePage() {
       nim: "24060123120001",
       kelompok: "21",
       shift: "4",
-      photo: "src/assets/yosua.jpg",
+      photo: "../src/assets/yosua.jpg",
     },
     {
       name: "Faiz Abdul Hanif",
