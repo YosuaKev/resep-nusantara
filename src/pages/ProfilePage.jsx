@@ -5,28 +5,28 @@ export default function ProfilePage() {
       nim: "24060123120001",
       kelompok: "21",
       shift: "4",
-      photo: "../src/assets/yosua.jpg",
+      photo: "/yosua.jpg",
     },
     {
       name: "Faiz Abdul Hanif",
       nim: "24060123120002",
       kelompok: "21",
       shift: "4",
-      photo: "src/assets/faiz.jpg",
+      photo: "/faiz.jpg",
     },
     {
       name: "Raihan Sahaja",
       nim: "24060123120003",
       kelompok: "21",
       shift: "4",
-      photo: "src/assets/Raihan.jpg",
+      photo: "/Raihan.jpg",
     },
     {
       name: "M. Adnan Abdu \nRafi'a",
       nim: "24060123120004",
       kelompok: "21",
       shift: "4",
-      photo: "src/assets/Adnan.jpg",
+      photo: "/Adnan.jpg",
     },
   ];
 
